@@ -1,3 +1,11 @@
+"""
+ Carga de edades: se desea mejorar el sistema de carga de edades, validando que
+correspondan a mayores de edad. Desarrollar un programa que solicite edades válidas e
+imprima la edad ingresada y cuántas cargas erróneas se realizaron
+"""
+
+
+
 print('=============================== Cargas Edades ===============================================')
 
 edad = 0
