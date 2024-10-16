@@ -13,7 +13,6 @@ Finalmente se deberán imprimir todos los datos pedidos.
 """
 
 nombre = input("Ingrese su Nombre : ")
-apellido = input("Ingrese su Apellido: ")
 edad = int(input("Ingrese su edad: "))
 nacimiento= input("Fecha de Nacimiento: ")
 matricula= int(input("Ingrese el monto de la matricula: $ "))
@@ -23,20 +22,23 @@ print("===============================  Universidad de Python - Inscripciones  =
 print("====================================================================================================================")
 
 print("================ Datos de Ingreso ===================")
-print("Nombre Completo:" , nombre, apellido )
-print(f"Fecha de Nacimiento y edad: {nacimiento} - {(edad)}")
+print(f"Nombre Completo: {nombre}")
+print(f"Fecha de Nacimiento y edad: {nacimiento} ({edad})")
+consulta = ""
 
 
+while True:
+    consulta = input('Posee Título?: ')
+    if consulta == "si":
+        print('\n')
+        break
+    elif consulta == "no":
+        print('\n')
+        break
+    else:
+        print('Dato mal ingresado. Intente Nuevamente')
 
-posee_titulo=input("Posee titulo secundario? Si / No: ")
-
-verdadero = "Si"
-falso = "No"
-
-verdadero_minuscula = verdadero.lower()
-falso_minsucula = falso.lower()
-
-if (posee_titulo == (verdadero_minuscula)):
+if (consulta == "si"):
     print("EXCELENTE!! Seguimos")
     print("Matricula:$ ",matricula)
     calculo_cuota = int(matricula) + 1000
